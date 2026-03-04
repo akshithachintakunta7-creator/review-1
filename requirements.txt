@@ -1,0 +1,9 @@
+Flask-Bcrypt
+Flask-JWT-Extended
+Flask-Cors
+Flask-Mail
+psycopg2-binary
+requests
+torch
+transformers
+gunicorn

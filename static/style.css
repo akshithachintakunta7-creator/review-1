@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f9f6fb;
+}
+
+.auth-container {
+    display: flex;
+    height: 100vh;
+}
+
+.auth-left {
+    width: 50%;
+    background: linear-gradient(to bottom right, #7b2ff7, #f107a3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.auth-right {
+    width: 50%;
+    padding: 60px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: linear-gradient(to right, #7b2ff7, #f107a3);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard {
+    padding: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

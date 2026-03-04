@@ -1,0 +1,9 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Frontend
+women-support-frontend/node_modules/
+women-support-frontend/build/
+women-support-frontend/.env

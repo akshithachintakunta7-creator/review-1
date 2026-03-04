@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Risk Trend</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>📈 Risk Trend</h2>
+  <canvas id="riskChart"></canvas>
+
+  <script>
+    fetch("http://localhost:8000/risk-trend", {
+      headers: {
+        "Authorization": "Bearer " + localStorage.getItem("token")
+      }
+    })
+    .then(res => res.json())
+    .then(data => {
+      new Chart(document.getElementById("riskChart"), {
+        type: "line",
+        data: {
+          labels: data.dates,
+          datasets: [
+            {
+              label: "Risk Score",
+              data: data.scores,
+              borderWidth: 2
+            },
+            {
+              label: "Moving Average",
+              data: data.moving_average,
+              borderDash: [5,5]
+            }
+          ]
+        }
+      });
+    });
+  </script>
+</body>
+</html>

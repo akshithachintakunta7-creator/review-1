@@ -1,0 +1,18 @@
+<div class="feature-container">
+    <h2>Symptom Checker</h2>
+
+    <label>Irregular Periods</label>
+    <input type="range" min="0" max="3" id="irregular">
+
+    <label>Fatigue</label>
+    <input type="range" min="0" max="3" id="fatigue">
+
+    <label>Weight Gain</label>
+    <input type="range" min="0" max="3" id="weight">
+
+    <button onclick="checkHealth()">Analyze Health</button>
+
+    <div id="healthResult"></div>
+</div>
+
+<script src="/static/app.js"></script>
