@@ -1,8 +1,7 @@
 from flask import Flask, request, jsonify
 import os
 import requests
-import torch
-import torch.nn.functional as F
+
 from datetime import datetime, timedelta
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
